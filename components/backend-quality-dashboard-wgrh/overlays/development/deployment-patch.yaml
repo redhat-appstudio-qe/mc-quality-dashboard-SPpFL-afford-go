@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-wgrh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-egmc-tenant/mc-quality-dashboard/backend-quality-dashboard-wgrh@sha256:2e5982004c509324892a593528a5b74853985c6df52a51921eda8a4119acabd9
+        name: container-image
+        resources: {}
+status: {}
